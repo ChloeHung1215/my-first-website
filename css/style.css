@@ -24,7 +24,7 @@ html, body {
   
   ul, ol {
     list-style: none;
-    margin: 0px;
+    margin: 0px !important;
     padding: 0px;
   }
   
@@ -143,12 +143,17 @@ img {
 }
 
 h2 {
-    margin-bottom: 75px;
+    margin-bottom: 75px !important;
     text-align: center;
     font-size: 40px;
     line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.summary {
+    display: flex;
+    align-items: center;
 }
 
 .col-left, .col-right {
@@ -218,10 +223,9 @@ h2 {
     justify-content: space-evenly;
 }
 
-.sevice-content {
-    padding: 0 15px;
-    width: 33.333333333333%;
-
+.service-content {
+    padding: 0 20px;
+    width: calc(100%/3);
 }
 
 .service-content i {
@@ -252,6 +256,10 @@ h2 {
 
 .col-horizonal:last-child {
     border-bottom: 0;
+}
+
+.col-item {
+    padding-right: 10px;
 }
 
 h3.resume-subtitle {
@@ -413,6 +421,13 @@ h3.resume-subtitle {
     display: flex;
 }
 
+.form-input, .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
 .form-submit {
     display: flex;
     padding: 0 15px;
@@ -539,6 +554,7 @@ h3.resume-subtitle {
     .service-content {
         text-align: center;
         margin-bottom: 10px;
+        width: 100%;
     }
 
     .col-work {
@@ -546,8 +562,21 @@ h3.resume-subtitle {
         width: 100%;
     }
 
+    .item-container {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    h3.resume-subtitle {
+        margin-left: 0;
+    }
+
     .contact-form {
-        width: 80%;
+        width: 85%;
+    }
+
+    h2 {
+        margin-bottom: 60px !important;
     }
 
   

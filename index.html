@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/13bc32e03d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -147,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="col-horizontal">
+            <div class="col-horizonal">
                 <h3 class="resume-subtitle">experience:</h3>
                 <div class="item-container">
                     <div class="col-item">
@@ -239,17 +247,30 @@
                 <form action="">
                     <div class="form-wrapper">
                         <div class="form-input">
-                            <input type="text" name="name" class="form-style" placeholder="input your name" required>
+                            <label for="input">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="input your name" required>
                         </div>
                         
                         <div class="form-input">
-                            <input type="email" name="email" class="form-style" placeholder="enter your email" required>
+                            <label for="input">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="enter your email" required>
                         </div>
                     </div>
 
                     <div class="form-input">
-                        <textarea name="textarea" id="message" cols="30" rows="10" placeholder="write message" required></textarea>                         
+                        <label for="textarea">Message</label>
+                        <textarea name="textarea" id="message" cols="30" rows="10" class="form-control" placeholder="write message" required></textarea>                         
                     </div>
+
+                    <div class="form-group">
+                        <label for="select">Select</label>
+                        <select class="form-control">
+                          <option value="">-- select --</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                        </select>
+                      </div>
 
                     <div class="form-submit">
                         <input type="submit" name="submit" value="submit">
