@@ -481,6 +481,10 @@ h3.resume-subtitle {
     .col-work {
         width: 50%;
     }
+
+    .menu-button, .menu-button-checkbox {
+        display: none;
+    }
 }
 
 /* 手機版CSS */
